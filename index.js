@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/tweet", async (req, res) => {
-  const tweet = ({ user, content } = req.body);
+  const { user, content } = req.body;
   if (user && content) {
     tweets.unshift({
       id: ++lastId,
