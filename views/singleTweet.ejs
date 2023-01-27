@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("head") %>
+  <body>
+    <%- include("header") %>
+    <main>
+      <% if (tweet) { %> <%- include("tweet",tweet) %> <% } else { %>
+      <h1>No tweet has been found with this id!</h1>
+      <% } %>
+    </main>
+  </body>
+</html>
