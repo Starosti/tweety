@@ -4,8 +4,10 @@
   <body>
     <%- include("header") %>
     <main>
-      <% if (tweet) { %> <%- include("tweet",tweet) %> <% } else { %>
-      <h1>No tweet has been found with this id!</h1>
+      <% if (tweet) { %>
+      <h2>Tweet with the ID <%=tweet.id %>:</h2>
+      <%- include("tweet",tweet) %> <% } else { %>
+      <h1>No tweet has been found with this ID!</h1>
       <% } %>
     </main>
   </body>
